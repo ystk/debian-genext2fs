@@ -1,3 +1,26 @@
+genext2fs (1.4.1-4) unstable; urgency=low
+
+  * debian/patches/byteswap_fix.diff: New patch by Samuel Thibault,
+    fix a segfault in the byte swapping code on little-endian architectures
+    (closes: 644776).
+
+ -- Jérémie Koenig <jk@jk.fr.eu.org>  Tue, 29 Nov 2011 17:42:14 +0100
+
+genext2fs (1.4.1-3) unstable; urgency=low
+
+  * New maintainer (closes: 579369).
+  * Packaging cleanup:
+    - update autotools dependencies; 
+    - update to debhelper 8;
+    - switch to source format 3.0 (quilt);
+    - bump Standards-Version to 3.9.2.
+  * debian/patches/blocksize+creator.diff: New patch, add options -B and -o
+    to select the block size and creator OS (closes: 562999).
+  * Add Vcs-Git and Vcs-Browser fields to debian/control.
+  * Add debian/gbp.conf (configuration for git-buildpackage).
+
+ -- Jérémie Koenig <jk@jk.fr.eu.org>  Sat, 03 Sep 2011 21:35:48 +0200
+
 genext2fs (1.4.1-2.2) unstable; urgency=low
 
   * Non-maintainer upload.
